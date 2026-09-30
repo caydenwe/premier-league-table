@@ -116,7 +116,7 @@ const C={
 let F=window.SEASON_FIXTURES.map(x=>({...x}));
 let editMode=false,editIdx=null,currentMW=defaultMW(),curHome=0,curAway=0;
 const STORAGE_KEY='epl2627_scores', PAT_KEY='epl2627_pat';
-const REPO_OWNER='caydenwe',REPO_NAME='Premier-League-Table',SCORES_PATH='scores.json';
+const REPO_OWNER='caydenwe',REPO_NAME='premier-league-table',SCORES_PATH='scores.json';
 const API_URL=`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${SCORES_PATH}`;
 
 function img(n,cls='crest'){const x=C[n];return x?`<img class="${cls}" src="${x.cr}" alt="" onerror="this.style.display='none'">`:''}
